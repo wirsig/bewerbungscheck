@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex">
+<title>Datenschutz – BewerbungsCheck</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0e0f13;
+    --surface: #16181f;
+    --border: #2a2d38;
+    --accent: #c8f060;
+    --success: #4ade80;
+    --text: #e8eaf0;
+    --muted: #6b7280;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+  }
+  .container { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 48px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+  .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 24px; }
+  .logo span { color: var(--accent); }
+  .back { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; transition: color 0.2s; }
+  .back:hover { color: var(--text); }
+  h1 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 32px; margin-bottom: 8px; }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+  .highlight-box {
+    display: flex; align-items: flex-start; gap: 12px;
+    background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.2);
+    border-radius: 12px; padding: 16px 20px; margin-bottom: 40px;
+    font-size: 14px; line-height: 1.6; color: var(--text);
+  }
+  .highlight-box svg { flex-shrink: 0; margin-top: 2px; color: var(--success); }
+  .section { margin-bottom: 36px; }
+  .section h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-bottom: 12px; }
+  .section p { font-size: 15px; line-height: 1.7; color: var(--text); margin-bottom: 10px; }
+  .section a { color: var(--accent); text-decoration: none; }
+  .section a:hover { text-decoration: underline; }
+  .placeholder { background: var(--surface); border: 1.5px dashed var(--border); border-radius: 8px; padding: 12px 16px; font-size: 13px; color: var(--muted); font-style: italic; }
+  footer { margin-top: 80px; padding: 32px 0; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-links { display: flex; gap: 20px; }
+  .footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--text); }
+  .footer-copy { font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">Bewerbungs<span>Check</span></div>
+    <a class="back" href="index.html">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Zurück zum Tool
+    </a>
+  </header>
+
+  <h1>Datenschutz</h1>
+  <p class="subtitle">Datenschutzerklärung gemäß DSGVO</p>
+
+  <div class="highlight-box">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <span><strong>Kurzfassung:</strong> BewerbungsCheck verarbeitet alle eingegebenen Texte ausschließlich lokal in deinem Browser. Es werden keine Daten an Server übertragen, gespeichert oder weitergegeben.</span>
+  </div>
+
+  <div class="section">
+    <h2>Verantwortlicher</h2>
+    <div class="placeholder">
+      Vorname Nachname<br>
+      Musterstraße 1, 12345 Musterstadt<br>
+      E-Mail: deine@email.de
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Verarbeitung deiner Daten</h2>
+    <p>BewerbungsCheck ist eine rein clientseitige Anwendung. Alle Berechnungen und Analysen finden vollständig im Browser statt. Die von dir eingegebenen Texte (Stellenanzeige, Lebenslauf) werden zu keinem Zeitpunkt an externe Server übermittelt, gespeichert oder ausgewertet.</p>
+    <p>Mit dem Schließen oder Neuladen der Seite werden alle eingegebenen Daten unwiderruflich gelöscht.</p>
+  </div>
+
+  <div class="section">
+    <h2>Hosting</h2>
+    <p>Diese Website wird über GitHub Pages gehostet. GitHub kann dabei technische Zugriffsdaten (IP-Adresse, Zeitstempel, aufgerufene Seite) in Server-Logs erfassen. Dies liegt im Verantwortungsbereich von GitHub Inc. Weitere Informationen findest du in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">Datenschutzerklärung von GitHub</a>.</p>
+  </div>
+
+  <div class="section">
+    <h2>Google Fonts</h2>
+    <p>Diese Seite lädt Schriftarten über Google Fonts. Dabei wird deine IP-Adresse an Google übermittelt. Alternativ kannst du die Schriftarten lokal einbinden – wende dich dazu an den Betreiber.</p>
+  </div>
+
+  <div class="section">
+    <h2>Cookies & Tracking</h2>
+    <p>BewerbungsCheck setzt keine Cookies, verwendet kein Tracking und bindet keine Analyse-Dienste (z.B. Google Analytics) ein.</p>
+  </div>
+
+  <div class="section">
+    <h2>Deine Rechte</h2>
+    <p>Du hast gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten sowie das Recht auf Datenübertragbarkeit. Da wir keinerlei personenbezogene Daten speichern, sind diese Rechte hier technisch nicht anwendbar. Bei Fragen wende dich an die oben genannte Kontaktadresse.</p>
+  </div>
+
+  <div class="section">
+    <h2>Stand</h2>
+    <p>Januar 2025</p>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Tool</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+    <div class="footer-copy">© 2025 BewerbungsCheck</div>
+  </footer>
+</div>
+</body>
+</html>
